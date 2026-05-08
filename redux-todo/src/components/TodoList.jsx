@@ -16,8 +16,6 @@ function TodoList() {
         <TodoItem
           key = {todo.id}
           todo = {todo}
-          onToggle={()=> dispatch(toggleTodo(todo.id))}
-          onDelete={()=> dispatch(deleteTodo(todo.id))}
         />
       ))}
     </ul>
